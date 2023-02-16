@@ -1,9 +1,7 @@
-/course-info.yaml
-/course-remote-info.yaml
-/lesson-info.yaml
-/What should I do today
-/Relax
-/GET vs POST
-/Back to the future
+/test/__init__.py
+/ test/__pycache__/__init__.cpython-38.pyc
+/test/__pycache__/base.cpython-38.pyc
+/test/__pycache__/tests.cpython-38.pyc
+/test/base.py
+/test/tests.py
 /tests.py
-/test
