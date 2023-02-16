@@ -1,14 +1,16 @@
-# $Web Calendar 2/4
-# Let's add the ability to handle POST requests from the user side and parse their arguments.
+# $Web Calendar 3/4
+# store and access events
 import sys
 from flask import Flask
 from flask import request
 from flask import jsonify
 from flask_restful import Api, Resource, reqparse, inputs
+from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)  # Create a Flask application object
 api = Api(app)  # create an API object that accepts a flask application object as an argument
+app.config.from_object('config')
 
 parser = reqparse.RequestParser()
 parser.add_argument(
